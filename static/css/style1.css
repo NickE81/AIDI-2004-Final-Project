@@ -1,0 +1,72 @@
+body {
+    background-color: #f3f3f3;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.banner {
+    background-color: #FA320A;
+    color: white;
+    display: flex;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+h1 {
+    margin-left: 5px;
+}
+
+
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.prediction {
+    text-align: center;
+    font-size: 24;
+}
+
+.btn {
+    background-color: #961E06;
+    border-radius: 10px;
+    border-width: 0;
+    border: 2px solid #961E06;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin-top: 1cm;
+    padding: 5px 8px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: #961E06;
+}
+
+input[type = text] {
+    width: 10cm;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 1cm;
+    margin-left: 5cm;
+    border: 2px solid #961E06;
+    color: white;
+    background: #961E06;
+}

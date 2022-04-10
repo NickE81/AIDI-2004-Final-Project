@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Movie Reviews</title>
+        <style>
+            .sentiment{
+                color: {{colour}};
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}"/>
+    </head>
+
+    <body>
+        <div class = "prediction">
+            <div class = banner>
+                <h1>Movie Review <br> Sentiment Analysis</h1>
+                <form action = "{{url_for('predict')}}" method = "post">
+                    <input type = "text" name = "input" placeholder = "Enter a review..." required = "required"/>
+                    <button type = "submit" class = "btn">Predict</button>
+                </form>
+            </div>
+            <br>
+            <br>
+            <p>
+                Your review: {{sentence}}
+                <br>
+                The sentiment of the review is
+                <span class = 'sentiment'>{{result}}</span>
+                with a score of {{score}}
+            </p>
+        </div>
+    </body>
+</html>
