@@ -19,11 +19,15 @@
                     <input type = "text" name = "input" placeholder = "Enter a review..." required = "required"/>
                     <button type = "submit" class = "btn">Predict</button>
                 </form>
+                <form action = "{{url_for('home')}}">
+                    <button name = "reset" class = "btn reset-btn" type = "submit">Reset</button>
+                </form>
             </div>
             <br>
             <br>
             <p>
                 Your review: {{sentence}}
+                <br>
                 <br>
                 The sentiment of the review is
                 <span class = 'sentiment'>{{result}}</span>
