@@ -10,7 +10,7 @@ import pickle
 app = Flask(__name__)
 
 # Retrieve the saved sentiment analysis model
-model = load_model('models/model-2_layer_32-lr_001.h5')
+model = load_model('model-2_layer_32-lr_001.h5')
 # Retrieve the saved tokenizer
 token_obj = pickle.load(open('tokenizer.pkl', 'rb'))
 
