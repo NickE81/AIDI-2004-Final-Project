@@ -2,8 +2,8 @@
 import numpy as np
 from keras.models import load_model
 import pandas as pd
-from tensorflow.python.keras.preprocessing.text import Tokenizer
-from tensorflow.python.keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
 from flask import Flask, request, render_template
 import pickle
 
