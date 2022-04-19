@@ -28,8 +28,8 @@ def predict_sentiment(sentence):
     padded = pad_sequences(tokens, maxlen = MAX_LENGTH, padding = 'post')
     # Get the score predicted by the model, 0 - rotten, 1 - fresh
     score = model.predict(padded)[0][0]
-    # If the model predicted the score to be greater than 0.5, meaning closer
-    # to fresh
+    # If the model predicted the score to be greater than or equal to 0.5,
+    # meaning closer to fresh
     if score >= 0.5:
         # Set the resulting label as FRESH
         result = 'FRESH'
