@@ -20,6 +20,7 @@ MAX_LENGTH = 50
 # Find the vocabulary size
 vocab_size = len(token_obj.word_index) + 1
 
+# Function for predicting the sentiment of a review
 def predict_sentiment(sentence):
     # Convert the sentence to lowercase, and put it in a list for tokenizing
     sentence = [sentence.lower()]
